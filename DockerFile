@@ -1,0 +1,106 @@
+Here we are going to learn about 
+
+1.Creating dockerFile 
+2.Bulding image with that 
+3.Hosting that image into Dockerhub public repo
+4.And then running container with that hosted images 
+5.By using docker engine
+
+Create A diractory and enter into that
+
+mkdir Images
+cd Images 
+
+Downlod a html template from anywhere I used tooplate.com
+
+wget https://www.tooplate.com/zip-templates/2109_the_card.zip
+
+Install unzip 
+ 
+apt install unzip
+ 
+Do Unzip that file  
+unzip 2129_crispy_kitchen.zip
+
+tar czvf kitchan.tar.gz * 
+ 
+Move the file into upper folder 
+mv kitchan.tar.gz ../
+
+cd ..
+ls
+
+Remove Unaused file 
+rm -rf 2129_crispy_kitchen 2129_crispy_kitchen.zip
+ 
+ls
+
+Create a new directroy and move tis Tar file into that
+
+ mv kitchan.tar.gz kitchan/
+ 
+  cd kitchan/
+
+1.Creating docker File
+
+Now create a Dockerfile and write down the down one
+
+vim Dockerfile
+
+
+FROM ubuntu:latest
+LABEL "Author" = "Suraj"
+LABEL "Project" = "Food"
+RUN apt update && apt install git -y
+RUN apt install apache2 -y
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+EXPOSE 80
+WORKDIR /var/www/html
+VOLUME /var/log/apache2
+ADD Kitchan.tar.gz /var/www/html
+#COPY Kitchan.tar.gz /var/www/html
+
+
+Save the file :wq!
+
+2.bulding image with that
+
+docker build  -t kitchan .
+
+docker images
+
+Now Run the Container with the image
+
+docker run -d --name kitchanweb -p 9080:80 kitchan
+
+docker ps
+
+If container is running The go to browser and write the ip:container port 9070
+
+And It will work
+
+
+3.hosting that image into Dockerhub public repo
+
+Now Hosting this image into docker Hub You can follow this 
+
+Do docker login in terminal and u should have docker profile 
+
+docker login
+
+Enter id and password 
+
+Now build another images with ur dockerid/imagename:tag 
+
+docker build -t 0801suraj/kitchan:v2 .
+
+Now Push this image in to docker hub Public repo
+
+  docker push 0801suraj/kitchan:v2
+  
+  And that's done chek ur image in docker hub it's hosted u can Run containe with that any where with docker engine
+  
+4.and then running container with that hosted images 
+  
+ docker run -d --name kitchaniweb -p 9070:80 0801suraj/kitchan:v2
+   
