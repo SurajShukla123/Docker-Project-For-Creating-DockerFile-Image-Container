@@ -1,0 +1,190 @@
+ For Ref here is the Entire Command
+    8  cd images/
+    9  ls
+   10  mkdir nano
+   11  wget https://www.tooplate.com/zip-templates/2102_constructive.zip
+   12  apt install unzip -y
+   13  ls
+   14  unzip 2102 nano constructive.zip
+   15  unzip 2102_constructive.zip
+   16  unzip 2102_constructive.zip nano
+   17  clear
+   18  ls
+   19  rm -rf 2102_constructive.zip
+   20  ls
+   21  rm -rf 2102_constructive.zip.1
+   22  wget
+   23  wget https://www.tooplate.com/zip-templates/2102_constructive.zip
+   24  ls
+   25  cd nano
+   26  ;s
+   27  ls
+   28  cd ..
+   29  ls
+   30  unzip 2102 nano constructive.zip
+   31  unzip 2102_constructive.zip
+   32  ls
+   33  rm -rf 2102_constructive 2102_constructive.zip
+   34  ls
+   35  rm -nano
+   36  rm nano
+   37  rm -rf nano
+   38  ls
+   39  mkdir cons
+   40  wget https://www.tooplate.com/zip-templates/2102_constructive.zip
+   41  ls
+   42  unzip 2102_constructive.zip
+   43  ls
+   44  cd 2102_constructive/
+   45  ls
+   46  clear
+   47  ls
+   48  tar czvf cons.tar.gz*
+   49  ls
+   50  tar czvf nano.tar.gz*
+   51  tar czvf cons.tar.gz*
+   52  cd ..
+   53  ls
+   54  cd 2102_constructive/
+   55  tar czvf cons.tar.gz *
+   56  ls
+   57  mv cons.tar.gz ../
+   58  ls
+   59  cd ..
+   60  ls
+   61  rm -rf 2102_constructive 2102_constructive.zip
+   62  ls
+   63  clear
+   64  la
+   65  mv cons.tar.gz  cons/
+   66  cd cons/
+   67  ls
+   68  clear
+   69  Vi Dockerfile
+   70  vi Dockerfile
+   71  docker build -t consimg .
+   72  docker run -d --name conswebsite -p 9080:80 consimg
+   73  vi Dockerfile
+   74  clear
+   75  docker ps -a
+   76  docker rm 7e9
+   77  docker ps -a
+   78  docker images
+   79  docker rmi con
+   80  docker rmi consimg
+   81  docker images
+   82  docker run -d --name conswebsite -p 9080:80 consimg
+   83  ls
+   84  cat Dockerfile
+   85  clear
+   86  docker build -t consimg:V2
+   87  docker build -t consimg
+   88  ls
+   89  clear
+   90  ls
+   91  docker build -t consimg .
+   92  docker ps
+   93  docker images
+   94  docker run -d --name conswebsite -p 9080:80 consimg
+   95  docker ps
+   96  ip addr show
+   97  clear
+   98  ifconfig
+   99  clear
+  100  ls
+  101  docker ps
+  102  ip addr show
+  103  ifconfig
+  104  dig +short myip.opendns.com @resolver1.opendns.com
+  105  docker ps
+  106  ifconfig
+  107  dig +short myip.opendns.com @resolver1.opendns.com
+  108  ifconfig
+  109  docker ps
+  110  ifconfig
+  111  ifconfig ens33
+  112  ifconfig -a
+  113  ifconfig
+  114  mkdir images
+  115  ls
+  116  cd images/
+  117  ls
+  118  cat cons
+  119  ifconfig
+  120  ls
+  121  cd ..
+  122  ls
+  123  rm -rf images/ snap/
+  124  ls
+  125  mkdir images
+  126  cd images/
+  127  ls
+  128  mkdir kitchan
+  129  wget https://www.tooplate.com/zip-templates/2129_crispy_kitchen.zip
+  130  ls
+  131  unzio 2129_crispy_kitchen.zip
+  132  apt install unzip
+  133  unzip 2129_crispy_kitchen.zip
+  134  ls
+  135  cd 2129_crispy_kitchen/
+  136  ls
+  137  clear
+  138  tar czvf kitchan.tar.gz *
+  139  ls
+  140  mv kitchan.tar.gz ../
+  141  cd ..
+  142  ls
+  143  rm -rf 2129_crispy_kitchen 2129_crispy_kitchen.zip
+  144  ls
+  145  mv kitchan.tar.gz kitchan/
+  146  ls
+  147  cd kitchan/
+  148  ls
+  149  clear
+  150  vi Dockerfile
+  151  ls
+  152  vi Dockerfile
+  153  docker build  -t kitchan .
+  154  docker images
+  155  docker run -d --name kitchanweb -p 9080:80 kitchan
+  156  docker ps
+  157  ifconfig
+  158  docker images
+  159  ls
+  160  docker build -t 0801suraj/kitchan:v2 .
+  161  docker images
+  162  docker login
+  163  docker push 0801suraj/kitchan:V2
+  164  docker push 0801suraj/kitchan
+  165  docker push 0801suraj/kitchan:v2
+  166  ls
+  167  cd ..
+  168  ls
+  169  docker ps -a
+  170  docker image
+  171  docker images
+  172  docker stop d21dfa04b660 d21dfa04b660 aaa8a430e731
+  173  docker stop d21
+  174  docker ps
+  175  docker stop 698
+  176  ls
+  177  clear
+  178  docker ps -a
+  179  docker stop 698
+  180  docker stop 525
+  181  docker ps -a
+  182  docker rm 698
+  183  docker rm 525
+  184  docker ps -a
+  185  docker images
+  186  docker rmi d21 aaa
+  187  docker images
+  188  docker rmi d21dfa04b660
+  189  docker rmi 0801suraj/kitchan:v2
+  190  docker images
+  191  docker rmi kitchan
+  192  docker images
+  193  clear
+  194  docker run -d --name kitchaniweb -p 9070:80 0801suraj/kitchan:v2
+  195  docker ps
+  196  history
